@@ -12,3 +12,6 @@ env/
 
 # Vector Store (local database)
 chroma_db_fs/
+
+# data
+data/
