@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from app.chain import get_sql_generation_chain
 from app.schemas import SQLQueryRequest, SQLQueryResponse
 
-load_dotenv(dotenv_path="../.env")
+load_dotenv(dotenv_path=".env")
 
 app = FastAPI(
     title="Text-to-SQL Core AI Service",
