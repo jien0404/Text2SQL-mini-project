@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 
 from app.vector_store import get_vector_store_retriever
 
-DB_PATH = "./data/Chinook.sqlite"
+DB_PATH = "./data/Chinook_Sqlite.sqlite"
 
 def get_db():
     return SQLDatabase.from_uri(f"sqlite:///{DB_PATH}")
@@ -32,7 +32,7 @@ Here are some examples of user questions and their corresponding SQL queries:
 {examples}
 
 User Question: {question}
-SQL Query:
+SQL Query (Return only the query, do not prefix with any explanation or "SQL Query:"):
 """
 
 prompt = ChatPromptTemplate.from_template(prompt_template)

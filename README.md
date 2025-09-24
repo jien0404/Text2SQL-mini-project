@@ -9,4 +9,6 @@ Mở một terminal khác và dùng curl để gửi yêu cầu:
 curl -X POST "http://localhost:8000/generate-sql" \
 -H "Content-Type: application/json" \
 
-How many artists are there?
+examples:
+    How many artists are there?
+    Show me top 5 artists by sales
